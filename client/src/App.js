@@ -8,7 +8,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('/')
+    axios.get('/api')
       .then(response => {
         setMessage(response.data.message);
       })
